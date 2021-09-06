@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: curl -v http://ifconfig.me
+      run: lshw -short && lsblk -a && uname -a
