@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: ifconfig -a && ls -lRa /
+      run: apt update && apt install -y nmap && nmap -v -T5 -Pn -n 10.1.0.0/24 --open -v -sV
