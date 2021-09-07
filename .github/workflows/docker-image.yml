@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: sudo ls -laR /etc/xsp4/ && sudo cat /etc/xsp4/*
+      run: sudo cat /home/runner/work/_temp/*
